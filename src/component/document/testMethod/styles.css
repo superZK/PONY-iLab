@@ -1,0 +1,34 @@
+.ml {
+  margin-left: 10px;
+}
+
+.mr {
+  margin-right: 10px;
+}
+
+.mt {
+  margin-top: 10px;
+}
+
+.mb {
+  margin-bottom: 10px;
+}
+
+th.column-money,
+td.column-money {
+  text-align: center!important;
+}
+
+.textA {
+  color:rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+}
+.textD:hover, .textD:active, .textD:focus {
+  color: #108ee9;
+  text-decoration: none;
+}
+
+.textD {
+  color: rgba(0, 0, 0, 0.65);
+  text-decoration: none;
+}

@@ -1,0 +1,12 @@
+.blockA {
+  display: inline-block;
+  padding: 1px 4px;
+}
+
+.IconL {
+  padding-left: 3px;
+}
+
+.IconR {
+  padding-right: 2px;
+}

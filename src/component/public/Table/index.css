@@ -1,0 +1,12 @@
+.hideSearch {
+  display: none;
+}
+
+.hideAlert {
+  display: none;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}

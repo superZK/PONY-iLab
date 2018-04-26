@@ -1,0 +1,47 @@
+.ml {
+  margin-left: 10px;
+}
+
+.mr {
+  margin-right: 10px;
+}
+
+.mt {
+  margin-top: 10px;
+}
+
+.mb {
+  margin-bottom: 10px;
+}
+
+th.column-money,
+td.column-money {
+  text-align: center!important;
+}
+
+.checkboxBtn {
+  margin-top: 8px;
+  color: #000;
+}
+
+.preview:visited,
+.preview:hover,
+.preview:active,
+.preview:focus {
+  color: #108ee9;
+  text-decoration: none;
+}
+
+.preview {
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.65);
+  text-decoration: none;
+}
+
+.btn-antd:hover > .preview,
+.btn-antd:visited > .preview,
+.btn-antd:active > .preview,
+.btn-antd:focus > .preview {
+  color: #108ee9;
+  text-decoration: none;
+}

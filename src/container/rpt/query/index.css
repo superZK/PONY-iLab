@@ -1,0 +1,21 @@
+.preview:visited,
+.preview:hover,
+.preview:active,
+.preview:focus {
+  color: #108ee9;
+  text-decoration: none;
+}
+
+.preview {
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.65);
+  text-decoration: none;
+}
+
+.btn-antd:hover > .preview,
+.btn-antd:visited > .preview,
+.btn-antd:active > .preview,
+.btn-antd:focus > .preview {
+  color: #108ee9;
+  text-decoration: none;
+}

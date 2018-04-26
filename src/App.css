@@ -1,0 +1,359 @@
+html {
+  overflow-y: scroll;
+}
+
+body {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#root {
+  height: 100%;
+}
+
+#root > div {
+  height: 100%;
+}
+
+:root {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+:root body {
+  position: absolute;
+}
+
+.App > div {
+  height: 100%;
+}
+
+.router {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.router > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 清除浮动 */
+.clearfix:after{
+  content:'';
+  height:0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+.clear {
+  zoom:1;
+}
+
+/* 滚动条防抖动 */
+
+.App {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 60px;
+}
+
+.App-header {
+  /*background-color: #222;*/
+  float: none;
+  height: 80px;
+  padding: 5px;
+  color: white;
+}
+
+.banner-menu {
+  padding-top: 10px;
+  font-weight: 700;
+}
+
+/* 设置顶部menu字体样式 */
+.ant-menu-submenu-title {
+  font-weight: 700;
+  font-size: 15px;
+  font-family: '微软雅黑';
+}
+
+.banner-profile {
+  padding-right: 20px;
+  padding-top: 15px;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+/* ant-table文字对齐方式 */
+/* .ant-table-bordered .ant-table-thead > tr > th {
+  text-align: center;
+} */
+
+.table-right {
+  text-align: right !important;
+}
+
+/* 左浮动 */
+.margin-l {
+  float: left;
+}
+/* 右浮动 */
+.margin-r {
+  float: right;
+}
+/* 表格行点击后变色 */
+.rowClickClass {
+  background-color: #002766;
+  color: #fff;
+}
+
+.ant-table-thead > tr.ant-table-row-hover > td,
+.ant-table-tbody > tr.ant-table-row-hover > td,
+.ant-table-thead > tr.rowClickClass:hover > td,
+.ant-table-tbody > tr.rowClickClass:hover > td {
+  background-color: #002766;
+  color: #fff;
+}
+
+.ant-table-thead > tr.ant-table-row-hover > td,
+.ant-table-tbody > tr.ant-table-row-hover > td,
+.ant-table-thead > tr:not(.rowClickClass):hover > td,
+.ant-table-tbody > tr:not(.rowClickClass):hover > td {
+  background: #bae7ff;
+  color: #000;
+}
+
+.ant-table-row-expand-icon {
+  color: #000 !important;
+}
+/* 表格隔行变色 */
+.tableOddClass {
+  background-color: #d9d9d9;
+}
+/* 表单确认按钮样式 */
+.form-item-submit {
+  text-align: right;
+}
+/* button group class */
+.ant-btn-group {
+  margin-right: 10px;
+}
+
+/* 表格可编辑单元格样式 */
+.editable-cell {
+  position: relative;
+}
+
+.editable-cell-input-wrapper,
+.editable-cell-text-wrapper {
+  padding-right: 24px;
+}
+
+.editable-cell-text-wrapper {
+  padding: 5px 24px 5px 5px;
+}
+
+.editable-cell-icon,
+.editable-cell-icon-check {
+  position: absolute;
+  right: 0;
+  width: 20px;
+  top: 8px;
+  cursor: pointer;
+}
+
+.editable-cell-icon {
+  line-height: 18px;
+  display: none;
+}
+
+.editable-cell-icon-check {
+  line-height: 28px;
+}
+
+.editable-cell:hover .editable-cell-icon {
+  display: inline-block;
+}
+
+.editable-cell-icon:hover,
+.editable-cell-icon-check:hover {
+  color: #108ee9;
+}
+
+.editable-add-btn {
+  margin-bottom: 8px;
+}
+
+/* 修改ant_Tooltip组件默认样式 */
+.ant-tooltip-inner {
+  max-width: 1000px;
+  padding: 8px 10px;
+  color: #FFF;
+  text-align: left;
+  text-decoration: none;
+  background-color: rgba(64, 64, 64, 0.85);
+  border-radius: 4px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  min-height: 34px;
+}
+
+/* 修改搜索框搜索按钮位置 */
+.ant-input-affix-wrapper .ant-input-suffix {
+  right: 0 !important;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+    /* display: none; */
+    width: 10px;
+    height: 10px;
+    background-color: #F5F5F5;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  background-color: #d9edf7;
+  /* background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(122,153,217)), color-stop(0.72, rgb(73,125,189)), color-stop(0.86, rgb(28,58,148))); */
+}
+
+/* 修改表格勾选框大小 */
+.ant-checkbox-inner:after {
+  left: 6px !important;
+  top: 3px !important;
+}
+
+.ant-checkbox-inner {
+  top: 0px !important;
+  width: 18px !important;
+  height: 18px !important;
+  margin: 0 auto;
+}
+
+.ant-checkbox-indeterminate .ant-checkbox-inner:after {
+  left: 4px !important;
+  top: 7px !important;
+}
+
+.ant-table-row[class*="ant-table-row-level-0"] .ant-table-selection-column > span {
+  display: inline-block;
+  width: 100%
+}
+
+td .ant-checkbox-wrapper {
+  cursor: pointer;
+  font-size: 12px;
+  display: inline-block;
+  width: 100%;
+}
+
+td .ant-checkbox {
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+  line-height: 1;
+  position: relative;
+  vertical-align: text-bottom;
+  width: 100%;
+  top: 3px;
+}
+
+/* 修改表格行高 */
+.ant-table-small .ant-table-tbody > tr > td {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.ant-table-small .ant-table-tbody > tr > .ant-table-selection-column {
+  padding: 0px 0px !important;
+}
+
+/* 修改表格header高度 */
+.ant-table-thead > tr > .ant-table-selection-column {
+  padding: 0px 0px !important;
+}
+
+.ant-table-thead > tr > th {
+  font-weight: 700 !important;
+  font-size: 13px !important;
+}
+
+/* 修改Input后置图标位置 */
+.ant-input-affix-wrapper .ant-input-suffix {
+  right: 7px !important;
+  color: rgba(0,0,0,.43) !important;
+}
+
+/* 修改表格边框样式 */
+.ant-table-tbody > tr > td {
+  border-bottom: 1px solid #262626 !important;
+  transition: all .3s;
+}
+
+.ant-table-small {
+  border: 1px solid #262626 !important;
+  border-radius: 4px;
+}
+
+.ant-table-small .ant-table-thead > tr > th {
+  background: #fff;
+  border-bottom: 1px solid #262626 !important;
+}
+
+.ant-table-bordered .ant-table-thead > tr > th,
+.ant-table-bordered .ant-table-tbody > tr > td {
+  border-right: 1px solid #262626 !important;
+}
+
+.ant-table-placeholder {
+  position: relative;
+  padding: 16px 8px;
+  background: #fff;
+  border-bottom: 1px solid #262626 !important;
+  text-align: center;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.43);
+  z-index: 1;
+}
+
+/* 表单formItem下边距 */
+.formItem-margin-bottom {
+  margin-bottom: 5px !important;
+}
+
+.formItem-col-extra {
+  width: 100% !important;
+}
+
+.formItem-col-extra  .ant-col-sm-6 {
+  width: 12%;
+}
